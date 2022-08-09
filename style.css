@@ -1,0 +1,113 @@
+body{
+  font-family: 'Poppins' sans-serif;
+}
+
+:root{
+  /* Paleta de colores - Variables de colores */
+
+  --Primero: #145DA0;
+  --Segundo: #00827f;
+  --Tercero: #22485d;
+  --Cuarto: #809d99;
+  --Quinto: #f3f6ee;
+}
+
+.primary-text{
+  color: var(--Primero);
+}
+
+.second-text{
+  color: var(--Segundo);
+}
+
+.primary-bg{
+  background-color: var(--Tercero);
+}
+
+.secondary-bg{
+  background-color: var(--Cuarto);
+}
+
+.rounded-full{
+  border-radius: 100%;
+}
+
+#wrapper{
+  overflow-x: hidden;
+  background-image: linear-gradient(
+    to right,
+    #baf3d7,
+    #c2f5de,
+    #cbf7e4,
+    #d4f8ea,
+    #ddfaef
+  );
+}
+
+#sidebar-wrapper{
+  min-height: 100vh;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-handing{
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group{
+  width: 15rem;
+}
+
+#page-content-wrapper{
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper{
+  margin-left: 0;
+}
+
+#menu-toggle{
+  cursor: pointer;
+}
+
+#i{
+  padding-top: 2rem;
+}
+
+
+.list-group-item{
+  border: none;
+  padding: 20px 30px;
+}
+
+.list-group-item.active{
+  background-color: transparent;
+  color: var(--Segundo);
+  font-weight: bold;
+  border: none;
+}
+
+
+/*Estrellas*/
+
+
+
+@media (min-width: 768px){
+  #sidebar-wrapper{
+    margin-left: 0;
+  }
+
+  #page-content-wrapper{
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper{
+    margin-left: -15rem;
+  }
+}
+
+
+
+
+/*------------------------Final de Pupup--------------------*/
